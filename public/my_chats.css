@@ -1,0 +1,90 @@
+.p-2{
+    background-color:beige;
+ 
+    border-bottom: 3px solid white;
+    border-radius: 10px;
+
+    
+    
+    
+}
+
+.container{
+
+  position: absolute;
+  /* width: calc(100% - 20px); */
+  width: 100%;
+  max-width: 800px;
+  height: 500px;
+  border-radius: 10px;
+  background-color:bisque;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  background-color: #f8f8f8;
+  /* overflow: hidden; */
+  padding: 20px;
+  overflow: scroll;
+  
+  background-color: aliceblue;
+  /* overflow: hidden; */
+
+
+}
+.link{
+    text-decoration: none;
+    color: green;
+    
+    
+}
+.sender_name{
+    color: black;
+    font-weight: bold;
+}
+.header_chats{
+    text-align: center;
+
+}
+.section-child {
+   
+   
+   
+    
+  }
+  .name{
+    /* padding: 10px; */
+    color: black;
+    font-weight: 600;
+    padding: 3px;
+   
+   
+  }
+  .last_message_1{
+    /* padding: 6px; */
+   
+    overflow-x: hidden;
+    margin-left: 4px;
+    margin-top: 0%;
+    
+   
+  }
+  .section-child{
+    overflow-x: hidden;
+    background-color:#c7eafc;
+    border-radius: 10px;
+    margin-top: 4px;
+    max-height: 46.5px;
+    overflow-y: hidden;
+  }
+  .timing{
+    float: right;
+  }
+  
+
+
+
+
+
+
+

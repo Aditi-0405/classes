@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Anonymouse Real-time chat</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet"
+        id="bootstrap-css">
+    <!------ Include the above in your HEAD tag ---------->
+
+    <link href="../tutor_student_profile.css" type="text/css" rel="stylesheet" />
+
+    <!-- <script  src="../chat.js"></script> -->
+</head>
+
+<body>
+    <div id="container" class="container">
+
+        <div class="chat_window">
+            <div class="top_menu">
+                <div class="buttons">
+                    <div class="button close"></div>
+                    <div class="button minimize"></div>
+                    <div class="button maximize"></div>
+                </div>
+                <div class="title">Chat</div>
+            </div>
+            <ul id="messages" class="messages"></ul>
+            <div class="bottom_wrapper clearfix">
+                <i id="typing"></i>
+                <form id="form">
+                    <div class="message_input_wrapper">
+                        <input id="message" class="message_input" placeholder="Type your message here..." />
+                    </div>
+                    <button class="send_message">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+        integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- Add this in the <head> section of your index.html -->
+    <script crossorigin src="https://cdn.jsdelivr.net/npm/react@17.0.2/umd/react.development.js"></script>
+    <script crossorigin src="https://cdn.jsdelivr.net/npm/react-dom@17.0.2/umd/react-dom.development.js"></script>
+
+    <!-- Add this before your <script> tag that includes your React components -->
+    <script crossorigin src="https://cdn.jsdelivr.net/npm/babel-standalone@6.26.0/babel.min.js"></script>
+
+    <script src="../student_profile.js" type="text/babel"></script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel=stylesheet type="text/css" href="../homepage.css">
+
+</head>
+<body>
+    <form method="post" id="form_sub_give_extracurr" enctype="multipart/form-data">
+        <h5>FILL OUT THE NECESSARY DETAILS</h5>
+
+        <label for="name" class="form-label">NAME</label>
+        <input type="text" name="name" class="form-input" required><br><br>
+
+        <label for="activity" class="form-label">ACTIVITY</label>
+        <input type="text" name="activity" class="form-input" required><br><br>
+
+        <label for="std" class="form-label">CLASS</label>
+        
+        <select class="std" name="std" name="std">
+            <option value="prep">Prep</option>
+            <option value="nursery">Nursery</option>
+            <option value="L.K.G">L.K.G</option>
+            <option value="U.K.G">U.K.G</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="Others">Others</option>
+        </select><br><br>
+        <label for="description" class="form-label">DESCRIPTION</label>
+        <input type="text" name="description" class="form-input" required><br><br>
+
+        <label for="location" class="form-label">LOCATION</label>
+        <input type="text" name="location" class="form-input" required><br><br>
+
+        <label for="fees" class="form-label">CHARGES PER MONTH</label>
+        <input type="number" name="fees" class="form-input" required><br><br>
+
+        <h5>PREFERRED TIMINGS</h5>
+
+        <label for="start_time" class="form-label">START TIME</label>
+        <input type="number" name="start_time" class="form-input" required>
+        <select class="am_pm" id="am_pm_start" name="am_pm_start">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+        </select><br><br>
+
+        <label for="end_time" class="form-label">END TIME</label>
+        <input type="text" name="end_time" class="form-input" required>
+        <select class="am_pm" id="am_pm_end" name="am_pm_end">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+        </select><br><br>
+
+        <label for="photo" class="form-label">UPLOAD YOUR PHOTO</label>
+        <input type="file" name="photo" class="form-input" required><br><br>
+
+        <label for="phone" class="form-label">PHONE</label>
+        <input type="text" name="phone" class="form-input" required><br><br>
+
+        <label for="email" class="form-label">EMAIL</label>
+        <input type="email" name="email" class="form-input" required><br><br>
+
+        <button type="submit">SUBMIT </button>
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+    integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="text/javascript" src="../give_extra_curr.js"></script>
+    
+   
+
+</body>
+</html>
